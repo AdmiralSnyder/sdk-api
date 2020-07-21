@@ -79,6 +79,7 @@ The index of the icon in the file pointed to by <i>pszFile</i>.
 Type: <b>HICON*</b>
 
 A pointer to an <b>HICON</b> value that receives the handle to the large icon. This parameter may be <b>NULL</b>.
+Release the Icon handle with User32.DestroyIcon() to release the resources
 
 
 ### -param phiconSmall [out, optional]
@@ -86,7 +87,7 @@ A pointer to an <b>HICON</b> value that receives the handle to the large icon. T
 Type: <b>HICON*</b>
 
 A pointer to an <b>HICON</b> value that receives the handle to the small icon. This parameter may be <b>NULL</b>.
-
+Release the Icon handle with User32.DestroyIcon() to release the resources
 
 ### -param nIconSize
 
